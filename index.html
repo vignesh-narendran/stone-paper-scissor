@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Stone Paper Scissor</title>
+</head>
+<script src="script.js"></script>
+
+<body>
+    <div class="main-container">
+        <h1 style="text-align: center;">Stone Paper Scissor</h1>
+        <table class="main-table">
+            <tr>
+                <td>
+                    <div class="name">Computer<span class="score" id="cScore">0</span></div>
+                    <div class="image">
+                        <img id="compImg" src="" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="name">Human<span class="score" id="hScore">0</span></div>
+                    <div class="image">
+                        <img id="humImg" src="" alt="">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table class="selTable">
+            <tr>
+                <td>
+                    <input type="button" class="selBtn" id="stoneBtn">
+                </td>
+                <td>
+                    <input type="button" class="selBtn" id="paperBtn">
+                </td>
+                <td>
+                    <input type="button" class="selBtn" id="scissorBtn">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="winBoard"><span class="winMsg"></span><input class="okBtn" type="button" value="OK"></div>
+</body>
+
+</html>
